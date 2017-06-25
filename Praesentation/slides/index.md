@@ -9,8 +9,10 @@
 # Einstieg in Elm
 
 <br />
-<br />
 Carsten König - [@carstenk_dev](http://www.twitter.com/carstenk_dev)
+<br />
+<br />
+Code / Slides unter [github.com/CarstenKoenig/DWX2017](https://github.com/CarstenKoenig/DWX2017)
 
 ***
 
