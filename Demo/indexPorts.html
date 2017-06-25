@@ -6,16 +6,14 @@
 </head>
 
 <body>
-  <h2>5 Dice</h2>
-  <span>elm below</span>
-  </hr>
   <div id="main"></div>
-  </hr>
-  <span>elm above</span>
-  <script src="/_compile/TeaDemoComponentList.elm"></script>
+  <script src="/_compile/TeaDemoPorts.elm"></script>
   <script>
     var node = document.getElementById('main');
-    var app = Elm.TeaDemoComponentList.embed(node);
+    var app = Elm.TeaDemoPorts.embed(node);
+    app.ports.show.subscribe (function(text){
+      alert(text);
+    });
   </script>
 </body>
 

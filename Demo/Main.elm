@@ -1,4 +1,4 @@
-module Main exposing (main)
+module Main exposing (main, init)
 
 import Platform.Sub as Subs
 import Html exposing (Html, div, text, button)
