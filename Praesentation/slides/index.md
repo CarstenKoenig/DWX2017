@@ -48,19 +48,19 @@ Code / Slides unter [github.com/CarstenKoenig/DWX2017](https://github.com/Carste
   
 --- 
 
+### elm make
+
+- initialisieren eines Projekt `elm make`
+- kompilieren eines Projekts nach JavaScript `elm make Main.elm --output=main.js`
+
+---
+
 ### elm repl
 
 **R**ead **E**val **P**rint **L**oop
 
 - Konsole `elm repl`
 - Online [http://elmrepl.cuberoot.in/](http://elmrepl.cuberoot.in/)
-
----
-
-### elm make
-
-- initialisieren eines Projekt `elm make`
-- kompilieren eines Projekts nach JavaScript `elm make Main.elm --output=main.js`
 
 ---
 

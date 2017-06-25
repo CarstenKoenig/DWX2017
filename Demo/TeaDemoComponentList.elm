@@ -27,6 +27,11 @@ type alias Model =
     }
 
 
+type Msg
+    = DiceMsg Int Dice.Msg
+    | ZufaelligAendern
+
+
 init : ( Model, Cmd Msg )
 init =
     let
@@ -45,11 +50,6 @@ init =
         ( Model models
         , Cmd.batch cmds
         )
-
-
-type Msg
-    = DiceMsg Int Dice.Msg
-    | ZufaelligAendern
 
 
 update : Msg -> Model -> ( Model, Cmd Msg )
