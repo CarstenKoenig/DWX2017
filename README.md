@@ -1,2 +1,3 @@
 # DWX2017
-Materialien und Slides zu meinen Elm-Talk
+
+[Demos](./Demo) und [Slides](./Praesentation/EinstiegInElm.pdf) zu meinen Elm-Talk
