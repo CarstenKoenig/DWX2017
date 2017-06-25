@@ -75,8 +75,8 @@ Code / Slides unter [github.com/CarstenKoenig/DWX2017](https://github.com/Carste
 
 - Herunterladen von Packages `elm package install elm-lang/core`
 - Veröffentlichen von Packages `elm package publish`
-  - erwzingt **semver**
-- zeigt unterschiede zwischen Versionen `elm package diff elm-lang/core 3.0.0 4.0.0`
+  - erzwingt **semver**
+- zeigt Unterschiede zwischen Versionen `elm package diff elm-lang/core 3.0.0 4.0.0`
 
 ***
 
@@ -357,7 +357,7 @@ app.ports.name.send(input)
 
 ## Links und co.
 
-- Elm Guid Online: [https://guide.elm-lang.org/](https://guide.elm-lang.org/)
+- Elm Guide Online: [https://guide.elm-lang.org/](https://guide.elm-lang.org/)
 - Installieren: [https://guide.elm-lang.org/install.html](https://guide.elm-lang.org/install.html)
 - Package Verzeichnis / Docs: [http://package.elm-lang.org/](http://package.elm-lang.org/)
 - *fancy Search* [https://klaftertief.github.io/elm-search/](https://klaftertief.github.io/elm-search/)
