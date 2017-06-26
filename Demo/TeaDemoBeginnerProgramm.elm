@@ -21,7 +21,7 @@ type alias Model =
 
 init : Model
 init =
-    Model 1
+    { augenzahl = 1 }
 
 
 type Msg

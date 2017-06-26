@@ -8,9 +8,11 @@
 
 # Einstieg in Elm
 
+![Elm Logo](./images/ElmLogo.png)
+
+<br />
 <br />
 Carsten König - [@carstenk_dev](http://www.twitter.com/carstenk_dev)
-<br />
 <br />
 Code / Slides unter [github.com/CarstenKoenig/DWX2017](https://github.com/CarstenKoenig/DWX2017)
 
@@ -19,9 +21,9 @@ Code / Slides unter [github.com/CarstenKoenig/DWX2017](https://github.com/Carste
 ## Elm
 
 - Web-Frontendentwicklung 
-- wird in JavaScript übersetzt
+- nach JavaScript übersetzt
 - **rein** funktionale Sprache
-- ML Syntaxfamilie (Ocaml, F#, Haskell, ...)
+- ML Syntaxfamilie (F#, Haskell, Ocaml, ...)
 
 ***
 
@@ -321,28 +323,26 @@ init =
 
 
 ```elm
-port module Alert exposing (..)
+port module Prompt exposing (..)
 
 
-port show : String -> Cmd msg
+port showPrompt : String -> Cmd msg
+
+
+port promptResult : (String -> msg) -> Sub msg
 ``` 
 
 ---
 
-Javascript kann `Cmd` Ports *subscriben*:
+Javascript kann `Cmd` Ports *subscriben* und an `Sub` Ports *senden*:
 
 ```js
 var app = Elm.TeaDemoPorts.embed(node);
-app.ports.show.subscribe (function(text){
-	alert(text);
+app.ports.showPrompt.subscribe (function(frage){
+	var antwort = prompt(frage);
+	app.ports.promptResult.send(antwort);      
 });
 ```
-
-und an `Sub` Ports senden:
-
-```js
-app.ports.name.send(input)
-``` 
 
 ---
 

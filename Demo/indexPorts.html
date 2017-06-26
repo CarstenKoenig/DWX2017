@@ -11,8 +11,9 @@
   <script>
     var node = document.getElementById('main');
     var app = Elm.TeaDemoPorts.embed(node);
-    app.ports.show.subscribe (function(text){
-      alert(text);
+    app.ports.showPrompt.subscribe (function(frage){
+      var antwort = prompt(frage);
+      app.ports.promptResult.send(antwort);      
     });
   </script>
 </body>
