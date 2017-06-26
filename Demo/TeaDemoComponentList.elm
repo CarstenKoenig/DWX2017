@@ -66,7 +66,11 @@ update msg model =
                             Dice.update diceMsg diceModel
                     in
                         ( { model
-                            | dices = Dict.insert index newDiceModel model.dices
+                            | dices =
+                                Dict.insert
+                                    index
+                                    newDiceModel
+                                    model.dices
                           }
                         , Cmd.map (DiceMsg index) diceUpdateCmd
                         )

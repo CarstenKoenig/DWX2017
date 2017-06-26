@@ -45,7 +45,11 @@ view model =
 
 viewSwitchButtons : Html Msg
 viewSwitchButtons =
-    div [] (List.map viewSwitchButton (List.range 1 6))
+    div []
+        (List.map
+            viewSwitchButton
+            (List.range 1 6)
+        )
 
 
 viewSwitchButton : Int -> Html Msg

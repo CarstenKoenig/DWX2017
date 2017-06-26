@@ -12,7 +12,11 @@ main =
         { init = init
         , update = update
         , view = view
-        , subscriptions = always (Prompt.promptResult PromptResult)
+        , subscriptions =
+            always
+                (Prompt.promptResult
+                    PromptResult
+                )
         }
 
 
@@ -37,10 +41,16 @@ update : Msg -> Model -> ( Model, Cmd Msg )
 update msg model =
     case msg of
         ShowPrompt ->
-            ( model, Prompt.showPrompt "Name?" )
+            ( model
+            , Prompt.showPrompt "Name?"
+            )
 
         PromptResult answer ->
-            ( { model | result = answer }, Cmd.none )
+            ( { model
+                | result = answer
+              }
+            , Cmd.none
+            )
 
 
 view : Model -> Html Msg
