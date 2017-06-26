@@ -6,18 +6,12 @@ import Html.Attributes exposing (style, src)
 
 main : Html Never
 main =
-    init
-        |> view
+    view { augenzahl = 5 }
 
 
 type alias Model =
     { augenzahl : Int
     }
-
-
-init : Model
-init =
-    Model 5
 
 
 view : Model -> Html Never

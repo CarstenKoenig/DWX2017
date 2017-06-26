@@ -58,7 +58,7 @@ view model =
                 [ onClick ShowPrompt
                 , style
                     [ ( "font-size", "2em" )
-                    , ( "width", "100px" )
+                    , ( "width", "140px" )
                     ]
                 ]
                 [ text "Name?" ]
