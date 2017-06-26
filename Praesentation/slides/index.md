@@ -23,7 +23,7 @@ Code / Slides unter [github.com/CarstenKoenig/DWX2017](https://github.com/Carste
 - Web-Frontendentwicklung 
 - nach JavaScript übersetzt
 - **rein** funktionale Sprache
-- ML Syntaxfamilie (F#, Haskell, Ocaml, ...)
+- ML Syntaxfamilie (F#, Haskell, OCaml, ...)
 
 ***
 
@@ -33,7 +33,7 @@ Code / Slides unter [github.com/CarstenKoenig/DWX2017](https://github.com/Carste
 
 ### Installation
 
-- Installer für Windows und Mac
+- Installer für [Windows](http://install.elm-lang.org/Elm-Platform-0.18.exe) und [Mac](http://install.elm-lang.org/Elm-Platform-0.18.pkg)
 - Alle Plattformen: `npm install -g elm`
 - empfehlenswert: `npm install -g elm-format`
 
